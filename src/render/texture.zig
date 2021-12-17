@@ -27,4 +27,7 @@ pub const Texture = extern struct {
 
     extern fn wlr_texture_destroy(texture: *Texture) void;
     pub const destroy = wlr_texture_destroy;
+
+    extern fn wlr_texture_from_buffer(renderer: *wlr.Renderer, buffer: *wlr.Buffer) ?*Texture;
+    pub const fromBuffer = wlr_texture_from_buffer;
 };

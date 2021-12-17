@@ -55,6 +55,7 @@ pub const TouchPoint = @import("types/seat.zig").TouchPoint;
 pub const InputDevice = @import("types/input_device.zig").InputDevice;
 pub const InputMethodV2 = @import("types/input_method_v2.zig").InputMethodV2;
 pub const InputMethodManagerV2 = @import("types/input_method_v2.zig").InputMethodManagerV2;
+pub const InputPopupSurfaceV2 = @import("types/input_method_v2.zig").InputPopupSurfaceV2;
 
 pub const TextInputV3 = @import("types/text_input_v3.zig").TextInputV3;
 pub const TextInputManagerV3 = @import("types/text_input_v3.zig").TextInputManagerV3;
@@ -141,11 +142,12 @@ pub const XwaylandSurface = @import("xwayland.zig").XwaylandSurface;
 pub const XwaylandCursor = @import("xwayland.zig").XwaylandCursor;
 pub const Xwm = @import("xwayland.zig").Xwm;
 
-pub const List = @import("types/list.zig").List;
-pub const Box = @import("types/box.zig").Box;
-pub const FBox = @import("types/box.zig").FBox;
 pub const matrix = @import("types/matrix.zig");
 
+pub const AddonSet = @import("util/addon.zig").AddonSet;
+pub const Addon = @import("util/addon.zig").Addon;
+pub const Box = @import("util/box.zig").Box;
+pub const FBox = @import("util/box.zig").FBox;
 pub const Edges = @import("util/edges.zig").Edges;
 pub const log = @import("util/log.zig");
 pub const region = @import("util/region.zig");
